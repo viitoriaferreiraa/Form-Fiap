@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Cadastro - Novo Ponto Turístico</title>
+  </head>
+
+  <body class="container">
+    <main class="main">
+      <h1 class="title">Cadastro - Novo Ponto Turístico</h1>
+
+      <form action="#" name="register_local" id="register_local" method="post">
+        <fieldset class="fieldset">
+          <legend>Informações básicas</legend>
+          <label for="name">Nome do local: </label>
+          <input
+            required
+            type="text"
+            id="name"
+            name="name_register_local"
+            class="input"
+            autofocus
+            placeholder="Insira o nome do local ..."
+          />
+          <label for="address">Endereço / Cidade: </label>
+          <input
+            required
+            type="text"
+            id="address"
+            name="address"
+            class="input"
+            placeholder="Insira o endereço ..."
+          />
+          <label for="list_states">Estado:</label>
+          <input
+            required
+            list="states_options"
+            name="list_states"
+            id="list_states"
+            class="input"
+            placeholder="Insira o estado ..."
+          />
+          <datalist id="states_options">
+            <option value="AC"></option>
+            <option value="AL"></option>
+            <option value="AP"></option>
+            <option value="AM"></option>
+            <option value="BA"></option>
+            <option value="CE"></option>
+            <option value="DF"></option>
+            <option value="ES"></option>
+            <option value="GO"></option>
+            <option value="MA"></option>
+            <option value="MT"></option>
+            <option value="MS"></option>
+            <option value="MG"></option>
+            <option value="PA"></option>
+            <option value="PB"></option>
+            <option value="PR"></option>
+            <option value="PB"></option>
+            <option value="PI"></option>
+            <option value="RJ"></option>
+            <option value="RN"></option>
+            <option value="RS"></option>
+            <option value="RO"></option>
+            <option value="RR"></option>
+            <option value="SC"></option>
+            <option value="SP"></option>
+            <option value="SE"></option>
+            <option value="TO"></option>
+          </datalist>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>Formas de contato</legend>
+
+          <label for="contact_tel">Telefone:</label>
+          <input
+            required
+            type="tel"
+            id="contact_tel"
+            placeholder="Insira seu Telefone ..."
+            class="input"
+          />
+          <label for="contact_email">E-mail:</label>
+          <input
+            required
+            type="email"
+            id="contact_email"
+            placeholder="Insira seu email ..."
+            class="input"
+          />
+          <label for="contact_wpp">WhatsApp: </label>
+          <input
+            required
+            type="tel"
+            id="contact_wapp"
+            placeholder="Insira seu número de celular ..."
+            class="input"
+          />
+          <label for="url">Site: </label>
+          <input
+            required
+            type="url"
+            id="url"
+            placeholder="Insira seu email ..."
+            class="input"
+          />
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>
+              Outras informações
+          </legend>
+
+          <div class="div_input_file">
+              <h3 class="subtitle">Caso queira enviar arquivos (ex: fotos, videos, pdf...)</h2>
+                  <label for="file_picture">Enviar imagens</label>
+                  <input type="file" id="file_picture" class="input">
+          </div>  
+
+          <h3>Horário de Funcionamento</h3>
+          <div class="div_input_time">
+              <p>
+                  <label for="time_start">Abertura:</label>
+                  <input type="time" id="time_start" class="input">
+              </p>
+              <p>
+                  <label for="time_end">Fechamento:</label>
+                  <input type="time" id="time_end" class="input">
+              </p>
+          </div>         
+
+          <h3 class="subtitle">Dias de Funcionamento</h3>
+          <div class="div_days_active">
+              <p>
+                  <label for="days_active_1">Domingo</label>
+                  <input type="checkbox" id="days_active_1" name="checkbox_days_active_1"
+                      class="input input_days_active">
+              </p>
+              <p>
+                  <label for="days_active_2">Segunda</label>
+                  <input type="checkbox" id="days_active_2" name="checkbox_days_active_2"
+                      class="input input_days_active">
+              </p>
+              <p>
+                  <label for="days_active_3">Terça</label>
+                  <input type="checkbox" id="days_active_3" name="checkbox_days_active_3"
+                      class="input input_days_active">
+              </p>
+              <p>
+                  <label for="days_active_4">Quarta</label>
+                  <input type="checkbox" id="days_active_4" name="checkbox_days_active_4"
+                      class="input input_days_active">
+              </p>
+              <p>
+                  <label for="days_active_5">Quinta</label>
+                  <input type="checkbox" id="days_active_5" name="checkbox_days_active_5"
+                      class="input input_days_active">
+              </p>
+              <p>
+                  <label for="days_active_6">Sexta</label>
+                  <input type="checkbox" id="days_active_6" name="checkbox_days_active_6"
+                      class="input input_days_active">
+              </p>
+              <p>
+                  <label for="days_active">Sabado</label>
+                  <input type="checkbox" id="days_active_7" name="checkbox_days_active_7"
+                      class="input input_days_active">
+              </p>
+
+          </div>
+
+
+          <h3 class="subtitle">Permitido entrada de animais</h3>
+          <div class="div_radio_animals">
+              <p>
+                  <label for="radio_animals_yes">Sim</label>
+                  <input type="radio" id="radio_animals_yes" name="radio_animals"
+                      class="input input_radio_animals">
+              </p>
+              <p>
+                  <label for="radio_animals_no">Não</label>
+                  <input type="radio" id="radio_animals_no" name="radio_animals"
+                      class="input input_radio_animals">
+              </p>
+          </div>
+
+
+          <h3 class="subtitle">Valor do ingresso</h3>
+          <div class="div_ticket">
+              <p>
+                  <label for="ticket_adult">Adultos:</label>
+                  <input type="number" id="ticket_adult" name="ticket" class="input"
+                      placeholder="20,00">
+              </p>
+              <p>
+                  <label for="ticket_childreens">Menores de 12 anos:</label>
+                  <input type="number" id="ticket_childreens" name="ticket" class="input"
+                      placeholder="5,00">
+              </p>
+              <p>
+                  <label for="half_price">Meia Entrada:</label>
+                  <input type="number" id="half_price" name="ticket" class="input"
+                      placeholder="Ex: 10.00">
+              </p>
+          </div>
+
+          <h3 class="subtitle">Observações:</h3>
+          <textarea id="comments" name="comments" class="input_textarea"
+              placeholder="Digite aqui outras informações que julgar necessarias..."></textarea>
+      </fieldset>
+
+      <div class="div_buttons">
+        <button class="button_submit" type="submit">Enviar</button>
+        <button class="button_reset" type="reset">Limpar</button>
+      </div>
+      </form>
+    </main>
+  </body>
+</html>
